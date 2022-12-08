@@ -15,8 +15,8 @@
 
 /* todo Weather Item */
 .weather-item {
+  width: 50%;
   display: flex;
-  flex: 1;
   transition: 0.5s;
 }
 .weather-item:hover {
