@@ -1,0 +1,87 @@
+/* todo Weather List */
+.weather-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 12px;
+  margin-top: 1.5rem;
+  position: relative;
+  backdrop-filter: blur(2px);
+  padding: 2rem 0.5rem 1rem;
+  border-radius: 100% 12px 12px / 10% 12px 12px;
+}
+
+/* todo Weather Item */
+.weather-item {
+  display: flex;
+  flex: 1;
+  transition: 0.5s;
+}
+.weather-item:hover {
+  z-index: 1000;
+  background-color: #dddddd;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  transition: 0.5s;
+}
+
+/* todo Weather Text */
+.weather-text {
+  font-size: 1rem;
+  text-align: center;
+  color: #497174;
+  margin: auto;
+  flex: 2;
+  text-align: right;
+}
+.weather-text p {
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0 0.5rem 0 0;
+}
+
+lord-icon {
+  margin: 0.5rem 0;
+}
+
+.date-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.date-item__now {
+  flex: 1;
+  font-size: 2.5rem;
+  color: #497174;
+  margin: 1rem 0 0 0;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 100% 12px 12px 12px / 10% 12px 12px 12px;
+}
+.date-item__weekday {
+  flex: 1;
+  font-size: 1rem;
+  color: #497174;
+  margin: 0 0 1rem 0;
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 100% 12px 12px 12px / 10% 12px 12px 12px;
+}
+
+.illust-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 180px;
+}
+.illust-box img {
+  width: 80%;
+  position: absolute;
+  z-index: -1;
+}
